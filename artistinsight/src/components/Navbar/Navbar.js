@@ -1,14 +1,42 @@
-import React from 'react';
+import React, { Component } from 'react';
 import NavbarSearch from './NavbarSearch';
 
-const Navbar = () => {
-	return (
-		<nav >
-			<p>Artistinsight</p>
-			<NavbarSearch />
-			<p>Sign Out</p>
-		</nav>
-	)
+class Navbar extends Component {
+	constructor() {
+		super()
+		this.state = {
+			showHideSidenav: ''
+		}
+	}
+	componentDidMount() {
+	}
+
+
+	// myFunction = () => {
+	// 	console.log('hi');
+	// }
+
+	render() {
+		return(
+			<nav className={`navbar ${this.state.showHideSidenav}`}>
+				<a href='/' className="logo">Artist<span className='insight'>insight</span></a>
+				{/*<NavbarSearch />*/}
+				<div className="navbarRight">
+					<input type="text" placeholder="Search..."/>
+					<a href='#' className="signOut">Sign out</a>
+				</div>
+				<a href="#" ref='button' className='icon' onClick={this.toggleSidenav.bind(this)}>
+					<i className='fa fa-bars'></i>
+				</a>
+			</nav>
+		)
+	}
+
+	toggleSidenav() {
+		var css = (this.state.showHideSidenav === "") ? "responsive" : "";
+		this.setState({"showHideSidenav":css});
+		console.log(this.state.showHideSidenav);
+	}
 }
 
 export default Navbar;
