@@ -2,14 +2,16 @@
 @import "partials/base";
 
 // Partials
-@import "partials/artistbio";
+@import "partials/navbar";
+@import "partials/navbarsearch";
 @import "partials/artistpage";
+@import "partials/artistbio";
+@import "partials/followerstats";
 @import "partials/followerbar";
 @import "partials/followerbargraph";
 @import "partials/followerlinegraph";
-@import "partials/navbar";
-@import "partials/navbarsearch";
 @import "partials/streamstats";
+
 
 // Third-party
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');

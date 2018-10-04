@@ -2,7 +2,7 @@ import React from 'react';
 
 const StreamStats = () => {
 	return (
-		<div>
+		<div className='streamStats'>
 			<p>Stream Stats</p>
 		</div>
 	)

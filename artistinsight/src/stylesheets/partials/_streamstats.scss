@@ -1,0 +1,26 @@
+@import "base";
+
+.streamStats {
+	background-color: rgba(51, 51, 51, 1);
+	border-radius: .5rem;
+	padding: 275px 0;
+	margin: 30px 15px 30px 30px;
+	margin-top: 105px;
+	transition: all .2s ease-in-out;
+}
+
+.streamStats:hover {
+	transform: scale(1.02);
+}
+
+.streamStats p {
+	text-align: center;
+	margin: auto;
+	color: white;
+}
+
+@media screen and (max-width: 767px) {
+	.streamStats {
+		margin: 20px;
+	}
+}

@@ -1,0 +1,25 @@
+@import "base";
+
+.artistBio {
+	background-color: rgba(51, 51, 51, 1);
+	border-radius: .5rem;
+	padding: 130px 0;
+	margin: 30px 15px 30px 30px;
+	transition: all .2s ease-in-out;
+}
+
+.artistBio:hover {
+	transform: scale(1.02);
+}
+
+.artistBio p {
+	text-align: center;
+	margin: auto;
+	color: white;
+}
+
+@media screen and (max-width: 767px) {
+	.artistBio {
+		margin: 20px;
+	}
+}

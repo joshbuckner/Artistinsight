@@ -1,1 +1,26 @@
 @import "base";
+
+body {
+	// background-image: url("https://i.scdn.co/image/012ecd119617ac24ab56620ace4b81735b172686");
+	background-color: #424242;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 1000px;
+	background-size: cover;
+}
+
+.artistPage {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-auto-rows: 200px;
+	grid-gap: 20px;
+}
+
+@media screen and (max-width: 767px) {
+	.artistPage {
+		display: block;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		grid-auto-rows: 0;
+		grid-gap: 0;
+	}
+}

@@ -1,17 +1,14 @@
 import React from 'react';
 import ArtistBio from './ArtistBio';
 import StreamStats from './StreamStats';
-import FollowerBarGraph from './FollowerBarGraph/FollowerBarGraph';
-import FollowerLineGraph from './FollowerLineGraph';
+import FollowerStats from './FollowerStats/FollowerStats';
 
 const ArtistPage = () => {
 	return (
-		<div>
-			<p>Artist Page</p>
+		<div className='artistPage'>
 			<ArtistBio />
 			<StreamStats />
-			<FollowerBarGraph />
-			<FollowerLineGraph />
+			<FollowerStats />
 		</div>
 	)
 }

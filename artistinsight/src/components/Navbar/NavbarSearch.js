@@ -2,9 +2,7 @@ import React from 'react';
 
 const NavbarSearch = () => {
 	return (
-		<nav >
-			<p>Searchbox</p>
-		</nav>
+		<input type="text" placeholder="Search..."/>
 	)
 }
 

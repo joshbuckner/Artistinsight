@@ -11,18 +11,12 @@ class Navbar extends Component {
 	componentDidMount() {
 	}
 
-
-	// myFunction = () => {
-	// 	console.log('hi');
-	// }
-
 	render() {
 		return(
 			<nav className={`navbar ${this.state.showHideSidenav}`}>
 				<a href='/' className="logo">Artist<span className='insight'>insight</span></a>
-				{/*<NavbarSearch />*/}
 				<div className="navbarRight">
-					<input type="text" placeholder="Search..."/>
+					<NavbarSearch />
 					<a href='#' className="signOut">Sign out</a>
 				</div>
 				<a href="#" ref='button' className='icon' onClick={this.toggleSidenav.bind(this)}>
@@ -31,7 +25,6 @@ class Navbar extends Component {
 			</nav>
 		)
 	}
-
 	toggleSidenav() {
 		var css = (this.state.showHideSidenav === "") ? "responsive" : "";
 		this.setState({"showHideSidenav":css});
