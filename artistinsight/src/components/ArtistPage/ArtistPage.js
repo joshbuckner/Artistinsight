@@ -5,11 +5,11 @@ import FollowerStats from './FollowerStats/FollowerStats';
 
 const ArtistPage = () => {
 	return (
-		<div className='artistPage'>
-			<ArtistBio />
-			<StreamStats />
-			<FollowerStats />
-		</div>
+			<div className='artistPage'>
+				<ArtistBio />
+				<StreamStats />
+				<FollowerStats />
+			</div>
 	)
 }
 

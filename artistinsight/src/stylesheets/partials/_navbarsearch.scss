@@ -2,13 +2,19 @@
 
 .navbar input[type=text] {
 	padding: 6px;
-	border: none;
-	margin-top: 10px;
+	border: 1px solid white;
+	background-color: #333;
+	color: white;
+	caret-color: white;
+	margin-top: 16px;
 	margin-right: 10px;
-	font-size: 30px;
+	font-size: 20px;
 	width: 300px;
-	border-radius: 15px;
 	outline: none;
+}
+
+.navbar input[type=text]::placeholder {
+	color: #9c9c94;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, 
@@ -35,5 +41,8 @@ of horizontally) */
 		margin: 0;
 		width: 100%;
 		padding: 14px;
+	}
+	.responsive input[type=text]::placeholder {
+		padding-left: 28px;
 	}
 }

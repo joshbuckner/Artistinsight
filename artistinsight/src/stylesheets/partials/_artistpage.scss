@@ -1,7 +1,7 @@
 @import "base";
 
 body {
-	// background-image: url("https://i.scdn.co/image/012ecd119617ac24ab56620ace4b81735b172686");
+	//background-image: url("https://i.scdn.co/image/012ecd119617ac24ab56620ace4b81735b172686");
 	background-color: #424242;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -14,6 +14,31 @@ body {
 	grid-template-columns: repeat(2,1fr);
 	grid-auto-rows: 200px;
 	grid-gap: 20px;
+	margin: 0 10%;
+}
+
+@media screen and (max-width: 1600px) {
+	.artistPage {
+		margin: 0 8%;
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	.artistPage {
+		margin: 0 5%;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.artistPage {
+		margin: 0 2%;
+	}
+}
+
+@media screen and (max-width: 875px) {
+	.artistPage {
+		margin: 0 0;
+	}
 }
 
 @media screen and (max-width: 767px) {

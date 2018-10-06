@@ -14,10 +14,6 @@ body {
   text-align: center;
   text-decoration: none; }
 
-.signOut:hover {
-  background-color: #ddd;
-  color: black; }
-
 .navbar .icon {
   display: none;
   padding: 14px 16px;
@@ -72,17 +68,23 @@ of horizontally) */
   .navbarRight {
     float: none; }
   .signOut {
-    font-size: 30px; } }
+    font-size: 30px;
+    margin-left: 28px; } }
 
 .navbar input[type=text] {
   padding: 6px;
-  border: none;
-  margin-top: 10px;
+  border: 1px solid white;
+  background-color: #333;
+  color: white;
+  caret-color: white;
+  margin-top: 16px;
   margin-right: 10px;
-  font-size: 30px;
+  font-size: 20px;
   width: 300px;
-  border-radius: 15px;
   outline: none; }
+
+.navbar input[type=text]::placeholder {
+  color: #9c9c94; }
 
 /* When the screen is less than 600 pixels wide, hide all links, 
 except for the first one ("Home"). Show the link that contains 
@@ -103,7 +105,9 @@ of horizontally) */
     text-align: left;
     margin: 0;
     width: 100%;
-    padding: 14px; } }
+    padding: 14px; }
+  .responsive input[type=text]::placeholder {
+    padding-left: 28px; } }
 
 body {
   background-color: #424242;
@@ -116,7 +120,24 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 200px;
-  grid-gap: 20px; }
+  grid-gap: 20px;
+  margin: 0 10%; }
+
+@media screen and (max-width: 1600px) {
+  .artistPage {
+    margin: 0 8%; } }
+
+@media screen and (max-width: 1400px) {
+  .artistPage {
+    margin: 0 5%; } }
+
+@media screen and (max-width: 1200px) {
+  .artistPage {
+    margin: 0 2%; } }
+
+@media screen and (max-width: 875px) {
+  .artistPage {
+    margin: 0 0; } }
 
 @media screen and (max-width: 767px) {
   .artistPage {
@@ -126,28 +147,88 @@ body {
     grid-gap: 0; } }
 
 .artistBio {
-  background-color: #333333;
+  background-color: rgba(51, 51, 51, 0.8);
   border-radius: .5rem;
   padding: 130px 0;
   margin: 30px 15px 30px 30px;
-  transition: all .2s ease-in-out; }
+  transition: all .2s ease-in-out;
+  font-family: arial;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .artistBio:hover {
   transform: scale(1.02); }
 
-.artistBio p {
-  text-align: center;
-  margin: auto;
+.artistBio img {
+  display: block;
+  margin-top: -110px;
+  margin-left: 45px;
+  width: 100px;
+  /* you can use % */
+  height: auto; }
+
+.artistBio h1 {
+  font-size: 90px;
+  margin-top: -100px;
+  margin-left: 160px;
   color: white; }
+
+.artistBio p {
+  text-align: left;
+  margin-top: -50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: #e0e0e0;
+  font-size: 20px;
+  display: block; }
+
+@media screen and (max-width: 1800px) {
+  .artistBio p {
+    font-size: 20px; } }
+
+@media screen and (max-width: 1500px) {
+  .artistBio p {
+    font-size: 17px; } }
+
+@media screen and (max-width: 1200px) {
+  .artistBio h1 {
+    font-size: 75px; }
+  .artistBio p {
+    margin-top: -15px;
+    font-size: 15px; } }
+
+@media screen and (max-width: 900px) {
+  .artistBio h1 {
+    margin-top: -80px;
+    font-size: 55px; }
+  .artistBio p {
+    margin-top: 25px;
+    font-size: 13px; } }
 
 @media screen and (max-width: 767px) {
   .artistBio {
-    margin: 20px; } }
+    margin: 20px;
+    padding-bottom: 20px; }
+  .artistBio h1 {
+    margin-top: -60px;
+    margin-bottom: 0;
+    margin-left: 125px;
+    font-size: 55px; }
+  .artistBio p {
+    font-size: 20px;
+    margin-top: 20px; }
+  .artistBio img {
+    display: block;
+    margin-top: -110px;
+    margin-left: 45px;
+    width: 60px;
+    /* you can use % */
+    height: auto; } }
 
 .followerStats {
-  background-color: #333333;
+  background-color: rgba(51, 51, 51, 0.8);
   border-radius: .5rem;
-  padding: 423px 0;
+  padding: 418px 0;
   margin: 30px 30px 30px 0;
   transition: all .2s ease-in-out;
   grid-column-start: 2;
@@ -172,21 +253,86 @@ body {
     grid-row-end: unset; } }
 
 .streamStats {
-  background-color: #333333;
+  background-color: rgba(51, 51, 51, 0.8);
   border-radius: .5rem;
-  padding: 275px 0;
+  padding: 270px 0;
   margin: 30px 15px 30px 30px;
   margin-top: 105px;
-  transition: all .2s ease-in-out; }
+  transition: all .2s ease-in-out;
+  font-family: arial; }
 
 .streamStats:hover {
   transform: scale(1.02); }
 
+.streamData {
+  margin-top: -255px; }
+
 .streamStats p {
-  text-align: center;
-  margin: auto;
-  color: white; }
+  line-height: 65px;
+  text-align: left;
+  margin-left: 80px;
+  color: #e0e0e0;
+  font-size: 30px; }
+
+.streamPop {
+  background-color: #84bd00;
+  border-radius: 8px;
+  padding: 3px 6px; }
+
+.streamPts {
+  background-color: #84bd00;
+  border-radius: 8px;
+  padding: 3px 6px; }
+
+.streamMl {
+  background-color: #84bd00;
+  border-radius: 8px;
+  padding: 3px 6px; }
+
+.streamTvv {
+  background-color: #ff0000;
+  border-radius: 8px;
+  padding: 3px 6px; }
+
+.streamAvv {
+  background-color: #ff0000;
+  border-radius: 8px;
+  padding: 3px 6px; }
+
+.spotifyLogo {
+  color: #84bd00; }
+
+.youtubeLogo {
+  color: #ff0000; }
+
+@media screen and (max-width: 1800px) {
+  .streamData p {
+    font-size: 26px; } }
+
+@media screen and (max-width: 1600px) {
+  .streamData p {
+    font-size: 24px; } }
+
+@media screen and (max-width: 1400px) {
+  .streamData p {
+    margin-left: 40px;
+    font-size: 22px; } }
+
+@media screen and (max-width: 1200px) {
+  .streamData p {
+    font-size: 18px; } }
+
+@media screen and (max-width: 875px) {
+  .streamData p {
+    font-size: 14px; } }
 
 @media screen and (max-width: 767px) {
   .streamStats {
-    margin: 20px; } }
+    margin: 20px;
+    padding: 70px 0; }
+  .streamData {
+    margin-top: -60px;
+    margin-bottom: -50px; }
+  .streamData p {
+    font-size: 13px;
+    line-height: 30px; } }

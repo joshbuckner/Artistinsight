@@ -17,11 +17,6 @@ body {
 	text-decoration: none;
 }
 
-.signOut:hover {
-	background-color: #ddd;
-	color: black;
-}
-
 .navbar .icon {
 	display: none;
 	padding: 14px 16px;
@@ -89,5 +84,6 @@ of horizontally) */
 	}
 	.signOut {
 	font-size: 30px;
+	margin-left: 28px;
 	}
 }
