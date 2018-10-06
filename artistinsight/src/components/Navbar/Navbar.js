@@ -28,7 +28,6 @@ class Navbar extends Component {
 	toggleSidenav() {
 		var css = (this.state.showHideSidenav === "") ? "responsive" : "";
 		this.setState({"showHideSidenav":css});
-		console.log(this.state.showHideSidenav);
 	}
 }
 
