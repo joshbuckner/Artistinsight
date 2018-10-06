@@ -110,10 +110,11 @@ of horizontally) */
     font-size: 30px; } }
 
 body {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/0b/Mountains-1412683.svg");
   background-color: #424242;
   background-position: center;
   background-repeat: no-repeat;
-  height: 1000px;
+  height: 1200px;
   background-size: cover; }
 
 .artistPage {
@@ -140,6 +141,8 @@ body {
     margin: 0 0; } }
 
 @media screen and (max-width: 767px) {
+  body {
+    height: 100%; }
   .artistPage {
     display: block;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -147,7 +150,7 @@ body {
     grid-gap: 0; } }
 
 .artistBio {
-  background-color: rgba(51, 51, 51, 0.8);
+  background-color: rgba(51, 51, 51, 0.9);
   border-radius: .5rem;
   padding: 130px 0;
   margin: 30px 15px 30px 30px;
@@ -155,9 +158,6 @@ body {
   font-family: arial;
   overflow: hidden;
   text-overflow: ellipsis; }
-
-.artistBio:hover {
-  transform: scale(1.02); }
 
 .artistBio img {
   display: block;
@@ -226,7 +226,7 @@ body {
     height: auto; } }
 
 .followerStats {
-  background-color: rgba(51, 51, 51, 0.8);
+  background-color: rgba(51, 51, 51, 0.9);
   border-radius: .5rem;
   padding: 418px 0;
   margin: 30px 30px 30px 0;
@@ -235,9 +235,6 @@ body {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3; }
-
-.followerStats:hover {
-  transform: scale(1.02); }
 
 .followerStats p {
   text-align: center;
@@ -253,16 +250,13 @@ body {
     grid-row-end: unset; } }
 
 .streamStats {
-  background-color: rgba(51, 51, 51, 0.8);
+  background-color: rgba(51, 51, 51, 0.9);
   border-radius: .5rem;
   padding: 270px 0;
   margin: 30px 15px 30px 30px;
   margin-top: 105px;
   transition: all .2s ease-in-out;
   font-family: arial; }
-
-.streamStats:hover {
-  transform: scale(1.02); }
 
 .streamData {
   margin-top: -255px; }

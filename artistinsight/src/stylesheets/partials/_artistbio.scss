@@ -1,7 +1,7 @@
 @import "base";
 
 .artistBio {
-	background-color: rgba(51, 51, 51, .8);
+	background-color: rgba(51, 51, 51, .9);
 	border-radius: .5rem;
 	padding: 130px 0;
 	margin: 30px 15px 30px 30px;
@@ -11,10 +11,10 @@
 	text-overflow: ellipsis;
 }
 
-.artistBio:hover {
-	transform: scale(1.02);
-	// overflow: visible;
-}
+// .artistBio:hover {
+// 	transform: scale(1.02);
+// 	// overflow: visible;
+// }
 
 .artistBio img {
 	display: block;
