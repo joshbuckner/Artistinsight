@@ -105,9 +105,9 @@ of horizontally) */
     text-align: left;
     margin: 0;
     width: 100%;
-    padding: 14px; }
-  .responsive input[type=text]::placeholder {
-    padding-left: 28px; } }
+    padding: 20px 14px;
+    padding-left: 45px;
+    font-size: 30px; } }
 
 body {
   background-color: #424242;
