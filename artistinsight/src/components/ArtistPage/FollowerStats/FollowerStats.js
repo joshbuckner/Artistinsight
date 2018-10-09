@@ -5,7 +5,6 @@ import FollowerLineGraph from './FollowerLineGraph';
 const FollowerStats = () => {
 	return (
 		<div className='followerStats'>
-			<p>Follower Stats</p>
 			<FollowerBarGraph />
 			<FollowerLineGraph />
 		</div>

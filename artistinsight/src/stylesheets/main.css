@@ -115,7 +115,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 1200px;
-  background-size: cover; }
+  background-size: cover;
+  padding-bottom: 200px; }
 
 .artistPage {
   display: grid;
@@ -248,6 +249,95 @@ body {
     grid-column-end: unset;
     grid-row-start: unset;
     grid-row-end: unset; } }
+
+.fBar {
+  display: inline-block;
+  margin: 15px;
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 330px;
+  padding-bottom: 20px;
+  border-radius: 10px; }
+
+.followers {
+  position: relative;
+  font-size: 30px;
+  bottom: 20px; }
+
+.barIcon {
+  color: white;
+  font-size: 30px; }
+
+.facebookBar {
+  background-color: #00579c;
+  margin-top: 150px;
+  padding-top: 200px; }
+
+.instagramBar {
+  background-color: #8a3ab9;
+  margin-top: 20px;
+  padding-top: 330px; }
+
+.spotifyBar {
+  background-color: #84bd00;
+  margin-top: 220px;
+  padding-top: 130px; }
+
+.youtubeBar {
+  background-color: #ff0000;
+  margin-top: 310px;
+  padding-top: 40px; }
+
+@media screen and (max-width: 767px) {
+  .fBar {
+    display: inline-block;
+    margin: 10px;
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 330px;
+    padding-bottom: 20px;
+    border-radius: 10px; }
+  .barIcon {
+    font-size: 20px; }
+  .followers {
+    position: relative;
+    font-size: 20px;
+    bottom: 20px; } }
+
+.followerBarGraph {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: -400px;
+  margin-bottom: 800px; }
+
+.graphContainer {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.fLine {
+  margin-top: -780px;
+  background-color: #00579c;
+  padding: 15px;
+  border-radius: 10px; }
+
+.arrow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: #00579c;
+  transform: translateY(-50%) rotate(45deg);
+  margin-top: -15px;
+  margin-left: 82px; }
+
+@media screen and (max-width: 767px) {
+  .fLine {
+    padding-bottom: 0px;
+    margin-bottom: -380px; } }
 
 .streamStats {
   background-color: rgba(51, 51, 51, 0.9);

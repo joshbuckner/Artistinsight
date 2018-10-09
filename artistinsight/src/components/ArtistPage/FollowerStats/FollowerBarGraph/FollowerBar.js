@@ -1,9 +1,10 @@
 import React from 'react';
 
-const FollowerBar = () => {
+const FollowerBar = (props) => {
 	return (
-		<div>
-			<p>Follower Bar</p>
+		<div className={`fBar ${props.metric}Bar`}>
+			<p className='followers'>{props.followers}</p>
+			<i className={`barIcon fa fa-${props.metric}`}></i>
 		</div>
 	)
 }

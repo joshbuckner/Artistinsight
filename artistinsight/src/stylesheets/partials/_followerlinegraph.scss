@@ -1,0 +1,31 @@
+@import "base";
+
+.graphContainer {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.fLine {
+	margin-top: -780px;
+	background-color: #00579c;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.arrow {
+	position: absolute;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: #00579c;
+    transform: translateY(-50%) rotate(45deg);
+    margin-top: -15px;
+    margin-left: 82px;
+}
+
+@media screen and (max-width: 767px) {
+	.fLine {
+		padding-bottom: 0px;
+		margin-bottom: -380px;
+	}
+}
