@@ -333,7 +333,7 @@ body {
   background: #00579c;
   transform: translateY(-50%) rotate(45deg);
   margin-top: -15px;
-  margin-left: 82px; }
+  margin-left: 64px; }
 
 @media screen and (max-width: 767px) {
   .arrow {
