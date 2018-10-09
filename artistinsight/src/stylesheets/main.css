@@ -237,10 +237,39 @@ body {
   grid-row-start: 1;
   grid-row-end: 3; }
 
-.followerStats p {
+.graphLabels {
   text-align: center;
-  margin: auto;
-  color: white; }
+  font-size: 25px;
+  margin-top: -390px;
+  padding-left: 5px; }
+
+.facebookLabel {
+  padding: 10px 20px;
+  margin: 10px 45px;
+  color: white;
+  background-color: #00579c;
+  border-radius: 10px; }
+
+.instagramLabel {
+  padding: 10px 20px;
+  margin: 10px 45px;
+  color: white;
+  background-color: #8a3ab9;
+  border-radius: 10px; }
+
+.spotifyLabel {
+  padding: 10px 20px;
+  margin: 10px 45px;
+  color: white;
+  background-color: #84bd00;
+  border-radius: 10px; }
+
+.youtubeLabel {
+  padding: 10px 20px;
+  margin: 10px 45px;
+  color: white;
+  background-color: #ff0000;
+  border-radius: 10px; }
 
 @media screen and (max-width: 767px) {
   .followerStats {
